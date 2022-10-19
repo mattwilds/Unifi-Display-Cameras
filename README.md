@@ -1,3 +1,7 @@
+#This was designed to be built on a Raspberry Pi4B 8Gb for use as a replacement to the Unifi Protect Viewport which
+has been out of stock forever and needing something to fill the void.
+
+
 # !!!Warning!!!
 As of Raspbian Bullseye release (as well as RPi4B), omxplayer and the hardware decoding that work hand-in-hand are deprecated and/or unsupported. In order to use displaycameras, you should install raspbian buster (lite preferred). If you use an RPi4B, your source video codec must have hardware decode support in the RPi4B gpu.
 displaycameras *may* be rewritten around vlc, but challenges with vlc's DBUS support (for multiple vlc instances) may prevent the rewrite.
@@ -5,7 +9,7 @@ displaycameras *may* be rewritten around vlc, but challenges with vlc's DBUS sup
 displaycameras is a set of scripts run as a service on RaspberryPi hardware to locally display RTSP streams from Ubiquiti security camera systems.  It uses omxplayer to perform hardware accelerated playback of each configured feed in a grid of "windows" into which you divide your display.  It uses omxplayer's integration with DBUS to perform monitored startup, watchdog, and repair functions on feeds in order to maximize predictable, reliable performance.  It will optionally auto-detect screen resolution (and apply customized configuration) in case RPis don't have reliably consistent displays (e.g., mobile use).  It is capable of displaying more feeds than there are visible windows in your display grid by rendering some feeds off screen and rotating feeds through window positions (on and off screen) in order to visibly display all feeds over a reasonable period of time.
 
 ## Donations
-If you feel compelled to contribute to the project, feel free to send funds to https://www.paypal.me/anonymousdog
+If you feel compelled to contribute to the project, feel free to send funds to https://www.paypal.me/1MageVsTheWorld
 
 # Pre-requisites
 * RaspberryPi hardware (for omxplayer)
@@ -19,7 +23,7 @@ If you feel compelled to contribute to the project, feel free to send funds to h
 ### Latest Release (recommended)
 Go to https://github.com/Anonymousdog/displaycameras/releases/latest and download the Source Code (tar.gz) file
 ### Latest Commits (only when directed)
-Download https://github.com/Anonymousdog/displaycameras/archive/master.tar.gz
+Download https://github.com/mattwilds/Unifi-Display-Cameras/master.tar.gz
 
 ## Unpack the Archive
 1. `tar -xvzf ./<source_code.tar.gz>`
