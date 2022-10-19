@@ -1,0 +1,103 @@
+# This is the camera feed/windows layout configuration file for the
+# displaycameras service.  It ONLY configures the layout and feeds for
+# the cameras; the rest of the configuration is in displaycameras.conf.
+# See the comments in that file for notes on configuring the below.
+
+# Window names
+
+# 4x4 screen
+windows=(first_left first_left_mid first_right_mid first_right second_left second_left_mid second_right_mid second_right third_left third_left_mid third_right_mid third_right fourth_left fourth_left_mid fourth_mid_right fourth_right)
+# Make sure to account for each window above in the list below.
+
+# Windows positions
+
+window_positions=(
+#First Row
+# 1024x540
+#first_left
+"0 0 1023 539" \
+#first_left_mid
+"1024 0 2047 539" \
+#first_right_mid
+"2048 0 3071 539" \
+#first_right
+"3072 0 4095 539" \
+
+#Second Row
+# 1024x540
+#second_left
+"0 540 1023 1079" \
+#second_left_mid
+"1024 540 2047 1079" \
+#second_right_mid
+"2048 540 3071 1079" \
+#second_right
+"3072 540 4095 1079" \
+
+#Third Row
+# 1024x540
+#third_left
+"0 1080 1023 1619" \
+#third_left_mid
+"1024 1080 2047 1619" \
+#third_right_mid
+"2048 1080 3071 1619" \
+#third_right
+"3072 1080 4095 1619" \
+
+#Fourth Row
+# 1024x540
+#fourth_left
+"0 1620 1023 2159" \
+#fourth_left_mid
+"1024 1620 2047 2159" \
+#fourth_right_mid
+"2048 1620 3071 2159" \
+#fourth_right
+"3072 1620 4095 2159" \
+)
+
+# Camera Names
+camera_names=(cam1 cam2 cam3 cam4 cam5 cam6 cam7 cam8 cam9 cam10 cam11 cam12 cam13 cam14 cam15 cam16)
+# Make sure to account for each camera above in the list of feeds below.
+
+# Camera Feeds
+
+camera_feeds=( \
+# Low-Res
+#cam1
+"rtsp://xxx.xxx.xxx.xxx:7447/yyyyy_2" \
+#cam2
+"<Camera stream URL>" \
+#cam3
+"<Camera stream URL>" \
+#cam4
+"<Camera stream URL>" \
+#cam5
+"<Camera stream URL>" \
+#cam6
+"<Camera stream URL>" \
+#cam7
+"<Camera stream URL>" \
+#cam8
+"<Camera stream URL>" \
+#cam9
+"<Camera stream URL>" \
+#cam10
+"<Camera stream URL>" \
+#cam11
+"<>" \
+#cam12
+"<>" \
+#cam13
+"<>" \
+#cam14
+"<>" \
+#cam15
+"<>" \
+#cam16
+"<>" \
+)
+
+# Are we rotating cameras through the window matrix? (default false if not set here)
+rotate="false"

@@ -21,7 +21,7 @@ If you feel compelled to contribute to the project, feel free to send funds to h
 # Download/Install/Upgrade/Remove
 ## Download the Archive
 ### Latest Release (recommended)
-Go to https://github.com/Anonymousdog/displaycameras/releases/latest and download the Source Code (tar.gz) file
+Go to https://github.com/mattwilds/Unifi-Display-Cameras/releases/latest and download the Source Code (tar.gz) file
 ### Latest Commits (only when directed)
 Download https://github.com/mattwilds/Unifi-Display-Cameras/master.tar.gz
 
