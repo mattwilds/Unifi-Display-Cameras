@@ -86,17 +86,17 @@ camera_feeds=( \
 #cam10
 "<Camera stream URL>" \
 #cam11
-"<>" \
+"<Camera stream URL>" \
 #cam12
-"<>" \
+"<Camera stream URL>" \
 #cam13
-"<>" \
+"<Camera stream URL>" \
 #cam14
-"<>" \
+"<Camera stream URL>" \
 #cam15
-"<>" \
+"<Camera stream URL>" \
 #cam16
-"<>" \
+"<Camera stream URL>" \
 )
 
 # Are we rotating cameras through the window matrix? (default false if not set here)

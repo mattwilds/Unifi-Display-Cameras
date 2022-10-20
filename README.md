@@ -30,7 +30,7 @@ Download https://github.com/mattwilds/Unifi-Display-Cameras/master.tar.gz
 2. `cd ./<source_code directory>` to move to the directory where the archive unpacked
 
 ## Make the Installer Executable
-`chmod u+x ./install.sh`
+`chmod +x ./install.sh`
 
 ## Installation
 1. `sudo ./install.sh`
@@ -45,10 +45,10 @@ No changes will be made to your existing config files, cron job setup, gpu memor
 1. Stop the service: `sudo systemctl stop displaycameras.service`
 2. Disable the service: `sudo systemctl disable displaycameras.service`
 3. Remove the files:
-	a. Remove the config directory, `sudo rm -R /etc/displaycameras`
-	b. Remove the service file, `sudo rm /etc/systemd/system/displaycameras.service`
-	c. Remove the scripts, `sudo rm /usr/bin/omxplayer_dbuscontrol /usr/bin/black.png /usr/bin/rotatedisplays`
-	d. Remove the crontab file, `sudo rm /etc/cron.d/repaircameras && sudo systemctl restart cron`
+a. Remove the config directory, `sudo rm -R /etc/displaycameras`
+b. Remove the service file, `sudo rm /etc/systemd/system/displaycameras.service`
+c. Remove the scripts, `sudo rm /usr/bin/omxplayer_dbuscontrol /usr/bin/black.png /usr/bin/rotatedisplays`
+d. Remove the crontab file, `sudo rm /etc/cron.d/repaircameras && sudo systemctl restart cron`
 4. Remove the pre-requisites (optional): `for each package in omxplayer fbi; do sudo apt-get purge $package -y; done`
 5. Remove pre-requisites' dependencies (optional): `sudo apt-get autoremove -y`
 
